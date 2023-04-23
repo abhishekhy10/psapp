@@ -6,7 +6,7 @@ require('db_config.php');
 if(isset($_POST) && !empty($_POST['id'])){
 
 	   // select image to delete    
-	   $sql_select = "SELECT image FROM image_gallery WHERE id = ".$_POST['id'];
+	   $sql_select = "SELECT image FROM image_gallary WHERE id = ".$_POST['id'];
 	   $select_result = $conn->query($sql_select);
 	    $row = $select_result->fetch_row();
 		$image_name = $row[0];
